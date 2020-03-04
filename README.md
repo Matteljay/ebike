@@ -111,7 +111,7 @@ The first image shows the programming setup for the ATtiny85 micro controller. I
 
 The above images show the spot welder. Note that an active cooling fan pointed at the aluminum heat sink is required if multiple welds are made in a short time. What I really like is the auto-pulse sensor: the LED lights up when the nickel ribbon is touched with the electrodes. After one second of warning the main pulse performs the weld which you can change in the source code. If the brass rods stick to the weld, there is NO second pulse until you gently wiggled off the electrodes. The trigger sensor is ready again after one additional second of safety margin to prevent multiple pulses, all settings can be easily be adjusted in the [sketch](SpotWelderSense.ino).
 
-The 3rd one show the working diagram, it was created using the [Fritzing](https://fritzing.org/home/) electronics CAD software and [GIMP](https://www.gimp.org/) to correct some component names. To summarize: the L7805 powers the ATtiny85, which powers 2x TC4420 MOSFET drivers which power 8x IRF1404 MOSFETs, protected by 8x P6KE13A diodes (only 4 of each are drawn in the diagram). The main pulse comes from my Varta LFD60 with a CCA of 560A.
+The 3rd one shows the working diagram, it was created using the [Fritzing](https://fritzing.org/home/) electronics CAD software and [GIMP](https://www.gimp.org/) to correct some component names. To summarize: the L7805 powers the ATtiny85, which powers 2x TC4420 MOSFET drivers which power 8x IRF1404 MOSFETs, protected by 8x P6KE13A diodes (only 4 of each are drawn in the diagram). The main pulse comes from my Varta LFD60 with a CCA of 560A.
 
 <img src="img/spot/pack.jpg" alt="battery pack" width="300" />
 <img src="img/spot/pack2.jpg" alt="battery pack side" width="300" />
@@ -128,7 +128,7 @@ Let's have a look at the acquired [LED SMPS](https://www.ebay.de/itm/350W-60V-5-
 <img src="img/psu/top.jpg" alt="smps screwed open" width="300" />
 <img src="img/psu/back.jpg" alt="smps screwed open" width="300" />
 
-Now the homework becomes interesting. Let's first try to understand the basic principle of an SMPS. If you hardly have any electronics skills, now is the time to start watching [ALL](https://www.youtube.com/user/greatscottlab/videos?view=0&sort=da) of GreatScott's YouTube videos. At the time of this writing, he has about 300 public videos with an average length of 8,5 minutes. Good luck with learning [Matrix-style](https://youtu.be/OBxMsUxXcXU) at least one week full time. Many thanks to him for basically providing an entire education on YouTube!
+Now the homework becomes interesting. Let's first try to understand the basic principle of an SMPS. If you hardly have any electronics skills, now is the time to start watching [ALL of GreatScott's](https://www.youtube.com/user/greatscottlab/videos?view=0&sort=da) YouTube videos. At the time of this writing, he has about 300 public videos with an average length of 8,5 minutes. Good luck with learning [Matrix-style](https://youtu.be/OBxMsUxXcXU) at least one week full time. Many thanks to him for basically providing an entire education on YouTube!
 
 We're going to zoom in particularly on this video: [GreatScott - HACKED: Adding a Current Limit Feature to a Buck/Boost Converter](https://www.youtube.com/watch?v=8uoo5pAeWZI). There is also a [bug-fixed text version](https://www.instructables.com/id/Adding-a-Current-Limit-Feature-to-a-BuckBoost-Conv/).
 
